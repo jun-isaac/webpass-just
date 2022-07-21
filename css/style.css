@@ -109,3 +109,13 @@ header h1 {
 	transform: translateY(calc(-300px * 0));
 	transition: 0.5s;
 }
+
+/* 콘텐츠 영역 1 */
+#main {
+	display: flex;
+}
+
+#main .col {
+	outline: 1px solid #666;
+	width: 400px;
+}
