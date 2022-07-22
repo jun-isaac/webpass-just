@@ -45,6 +45,9 @@ $(function () {
 		$('.tab_contents').removeClass('on');
 		// 표시
 		$('#notice').addClass('on');
+		// 선택시 색 추가,제거
+		$('.notice-btn').addClass('on');
+		$('.gallery-btn').removeClass('on');
 	});
 
 	$('.tab_buttons .gallery-btn').click(function(){
@@ -52,6 +55,19 @@ $(function () {
 				$('.tab_contents').removeClass('on');
 				// 표시
 		$('#gallery').addClass('on');
+		// 선택시 색 추가,제거
+		$('.gallery-btn').addClass('on');
+		$('.notice-btn').removeClass('on');
+	});
+
+	$('.tab_contents .modal-click').click(function () {
+		// 모달 창 켜기
+		$('.modal').css('display', 'block');
+	});
+
+	$('.modal .close-btn').click(function () {
+		// 모달 창 끄기
+		$('.modal').css('display', 'none');
 	});
 
 }); //$
