@@ -113,6 +113,7 @@ header h1 {
 /* 콘텐츠 영역 1 */
 #main {
 	display: flex;
+	height: 200px;
 }
 
 #main .col {
@@ -122,7 +123,7 @@ header h1 {
 }
 
 #notice ul li {
-	padding: 5px;
+	padding: 3px;
 }
 
 #gallery{
@@ -131,7 +132,9 @@ header h1 {
 
 #gallery a {
 	display: block;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
+	padding: 10px;
+	padding-top: 0;
 }
 
 #gallery a img {
@@ -140,13 +143,38 @@ header h1 {
 
 /* 탭버튼 */
 
-#main .tap_buttons a.notice-btn,
-#main .tap_buttons a.gallery-btn {
+#main .tab_buttons a.notice-btn,
+#main .tab_buttons a.gallery-btn {
 	outline: 1px solid black;
 	display: block;
 	padding: 10px;
 }
 
-#main .tap_buttons {
+#main .tab_buttons {
 	display: flex;
+	margin-bottom: 1em;
+}
+
+#notice {
+	display: none;
+}
+
+#notice.on {
+	display: block;
+}
+
+#gallery {
+	display: none;
+}
+
+#gallery.on {
+	display: flex;
+}
+
+#main .banner1, #main .banner2{
+	padding: 0;
+}
+
+#main {
+	margin-top: 20px;
 }
