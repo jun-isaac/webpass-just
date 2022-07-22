@@ -118,4 +118,35 @@ header h1 {
 #main .col {
 	outline: 1px solid #666;
 	width: 400px;
+	padding: 20px;
+}
+
+#notice ul li {
+	padding: 5px;
+}
+
+#gallery{
+	display: flex;
+}
+
+#gallery a {
+	display: block;
+	outline: 1px solid red;
+}
+
+#gallery a img {
+	width: 100%;
+}
+
+/* 탭버튼 */
+
+#main .tap_buttons a.notice-btn,
+#main .tap_buttons a.gallery-btn {
+	outline: 1px solid black;
+	display: block;
+	padding: 10px;
+}
+
+#main .tap_buttons {
+	display: flex;
 }
